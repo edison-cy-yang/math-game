@@ -1,0 +1,27 @@
+Player:
+  name
+  lives
+  total_lives
+  description: This class represent each player in the name, which should contain informations about player's name
+                their number of lives left, and the total lives available.
+  initialize: name, total_lives(3)
+  methods: accessors, deduct_life
+
+Game
+  list_of_questions
+  player_1
+  player_2
+  current_player
+  current_question
+  description: This class represents each game, which contains a list of questions and the two player objects that are
+                in this game. Handles user I/O
+  initialize: list of questions, player1, player2, current_player, current_question
+  methods: switch_player, start_game, add_question
+
+Question
+  description
+  answer (private)
+  description: This represents the question itself, which is the question description, and the answer for the question
+  initialize: description, answer
+  methods: accessor, check_answer
+
